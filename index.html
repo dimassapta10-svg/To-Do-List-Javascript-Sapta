@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list Sapta </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="toDo">
+            <h1>To Do List Sapta<img src="images/todolist.png"></h1>
+
+<!-- rekap dari statistik -->
+<div class="stats">
+    <div class="stat total">
+        <b id="statTotal">0</b>
+        <p>Total Tugas</p>
+</div>
+<div class="stat selesai">
+    <b id="statSelesai">0</b>
+    <p>Selesai</p>
+</div>
+<div class="stat belum">
+    <b id="statBelum">0</b>
+        <p>Belum Selesai</p>
+        </div>
+</div>
+
+<div class="row" id="row">
+    <input type="text" id="inputTask" placeholder="Tambahkan to do list">
+        <button id="tombol">tambahkan</button>
+</div>
+
+<!-- peringatan kalo input kosong -->
+<p id="pesanPeringatan" class="peringatan hidden">Kamu belum memasukan to do list, di isi dulu bro!</p>
+    <ul id="listContainer">
+        </ul>
+
+<!-- tampil kalo belum ada tugas -->
+<div id="pesanKosong" class="pesan">
+     <img src="images/plus.png">
+      <p>Belum ada tugas, ayo tambahkan!</p>
+</div>
+
+<!-- tampil kalo semua tugas selesai -->
+<div id="pesanSelesai" class="pesan hidden">
+    <img src="images/ceklis.png">
+        <p>gacorr! Semua tugas sudah selesai.</p>
+</div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
